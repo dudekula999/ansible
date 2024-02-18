@@ -1,3 +1,4 @@
+#variable at task level
 - name: Variables from PLAY level
   hosts: localhost
   vars: 
