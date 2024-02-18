@@ -1,5 +1,5 @@
 - name: ping playbook
-  hosts:
+  hosts: 3.90.3.74
   tasks:
   - name:: ping the server
     ansible.builtin.ping:
