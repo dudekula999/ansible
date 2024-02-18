@@ -5,7 +5,7 @@
     Trainer: "Dastagiri"
     Dureation: "110HRS"
   tasks:
-  - name: check Variables
-      Course: "aws-DevOps"
+  - name: Can you check this Variables 
+    Course: "AWS Course "DevOps""
     ansible.builtin.debug:
       msg: "Hi, I'm learing {{Course}}, trainer is {{Trainer}} and Dureation is {{Dureation}}"
