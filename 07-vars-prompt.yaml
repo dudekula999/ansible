@@ -2,12 +2,12 @@
   hosts: localhost
   vars_prompt:
   - name: USERNAME
-    prompt: Please enter USERNAME
-    private: false
+    prompt: Please enter your username
+    private: false # user can see what they are entering
   - name: PASSWORD
-    prompt: Please enter PASSWORD
-    private: true
+    prompt: Please enter your password
+    private: true # user can't see what they are entering
   tasks:
-  -name: proint and check the values
-   ansible.builtin.debug:
-    msg: "User name: {{USERNAME}}, and password is {{PASSWORD}}"
+  - name: print and check the values
+    ansible.builtin.debug:
+      msg: "username is: {{USERNAME}}, Password is: {{PASSWORD}}"
