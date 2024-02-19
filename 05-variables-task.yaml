@@ -1,13 +1,13 @@
-#variable at task level
-- name: Variables from PLAY level
+# TASK level variables
+- name: variables from PLAY level
   hosts: localhost
-  vars: 
+  vars:
     Course: "DevOps"
-    Trainer: "Dastagiri"
-    Dureation: "110HRS"
+    Trainer: "Sivakumar"
+    Duration: "110HRS"
   tasks:
-  - name: Can you check this Variables 
+  - name: check variables
     vars: #task level
-      Course: "AWS Course "DevOps""
+      Course: "DevOps with AWS"
     ansible.builtin.debug:
-      msg: "Hi, I'm learning {{Course}}, trainer is {{Trainer}} and Dureation is {{Dureation}} now"
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
