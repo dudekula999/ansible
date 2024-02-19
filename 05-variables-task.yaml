@@ -7,7 +7,7 @@
     Dureation: "110HRS"
   tasks:
   - name: Can you check this Variables 
-      var: #task level
+    vars: #task level
       Course: "AWS Course "DevOps""
     ansible.builtin.debug:
       msg: "Hi, I'm learning {{Course}}, trainer is {{Trainer}} and Dureation is {{Dureation}} now"
